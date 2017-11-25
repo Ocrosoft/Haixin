@@ -1,0 +1,12 @@
+#ifndef HAIXINENGINE_GLOBAL_H
+#define HAIXINENGINE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef HAIXINENGINE_LIB
+# define HAIXINENGINE_EXPORT Q_DECL_EXPORT
+#else
+# define HAIXINENGINE_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // HAIXINENGINE_GLOBAL_H
